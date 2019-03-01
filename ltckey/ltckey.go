@@ -298,7 +298,7 @@ func (priv *PrivateKey) ToWIF() (wif string) {
 	priv_bytes := priv.ToBytes()
 
 	/* Convert bytes to base-58 check encoded string with version 0x80 */
-	wif = b58checkencode(0x30, priv_bytes)
+	wif = b58checkencode(0xb0, priv_bytes)
 
 	return wif
 }
@@ -314,7 +314,7 @@ func (priv *PrivateKey) ToWIFC() (wifc string) {
 	priv_bytes = append(priv_bytes, []byte{0x01}...)
 
 	/* Convert bytes to base-58 check encoded string with version 0x80 */
-	wifc = b58checkencode(0x30, priv_bytes)
+	wifc = b58checkencode(0xb0, priv_bytes)
 
 	return wifc
 }
@@ -455,7 +455,7 @@ func (pub *PublicKey) ToAddress() (address string) {
 	pub_hash_2 := ripemd160_h.Sum(nil)
 
 	/* Convert hash bytes to base58 check encoded sequence */
-	address = b58checkencode(0xb0, pub_hash_2)
+	address = b58checkencode(0x30, pub_hash_2)
 
 	return address
 }
@@ -480,7 +480,7 @@ func (pub *PublicKey) ToAddressUncompressed() (address string) {
 	pub_hash_2 := ripemd160_h.Sum(nil)
 
 	/* Convert hash bytes to base58 check encoded sequence */
-	address = b58checkencode(0xb0, pub_hash_2)
+	address = b58checkencode(0x30, pub_hash_2)
 
 	return address
 }

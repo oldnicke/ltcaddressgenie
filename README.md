@@ -1,8 +1,6 @@
 # ltcaddressgenie
 A standalone Litecoin keypair/address generator, written in Go.
 
-# ltcaddressgenie
-
 ## Disclaimer
 
 **This project was written in May 2013 for educational purposes.**

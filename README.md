@@ -3,7 +3,7 @@ A standalone Litecoin keypair/address generator, written in Go.
 
 ## Disclaimer
 
-**This project was written in May 2013 for educational purposes.**
+**This project was written in May 2019 for educational purposes.**
 
 **Modern cryptocurrency wallets should use hierarchical deterministic (HD) keys instead.**
 
@@ -44,7 +44,7 @@ Private Key Base64                   yc2kmz/NyIKpBFXwQjuCuGeXvhnhV0FbbBIa7IlMKYs
 
 #### Importing an existing WIF/WIFC
 
-    $ ltcaddressgenie 
+    $ ltcaddressgenie 6w4aZKpd7wdcqgqRLdvpRP52SXHq9e6VHPqgwxq8XLAYdHyXZ29
 Litecoin Address (Compressed)        LNNT2dvtiYL3mt2CAJqC9e3kdwrWs7HZ2D
 Public Key Bytes (Compressed)        03B770D55E36040E20921526DB39A43ED7E6F16E88ADAB656DF217A8C5EEEC47E0
 Public Key Base64 (Compressed)       A7dw1V42BA4gkhUm2zmkPtfm8W6IratlbfIXqMXu7Efg
